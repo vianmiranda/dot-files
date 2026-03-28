@@ -12,7 +12,7 @@ set smarttab               " Backspace removes 'shiftwidth' worth of spaces.
 set wrap                   " Wrap long lines.
 set laststatus=2           " Always show the statusline.
 set ruler                  " Show the ruler in the statusline.
-set textwidth=80           " Wrap at n characters.
+"set textwidth=80           " Wrap at n characters.
 set nrformats-=octal       " Remove octal support from 'nrformats'.
 set tabstop=4              " Size of a Tab character.
 set shiftwidth=0           " Use same value as 'tabstop'.
@@ -61,7 +61,8 @@ nnoremap <BS>    <BS>x
 xnoremap <BS>    x
 
 """ Make visual selection more visible
-hi visual term=reverse cterm=reverse guibg=darkGray
+" hi visual term=reverse cterm=reverse guibg=darkGray
+highlight Visual ctermbg=darkblue ctermfg=NONE cterm=NONE
 
 set colorcolumn=80,120,160
 

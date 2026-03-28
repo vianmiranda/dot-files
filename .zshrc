@@ -6,6 +6,12 @@ fi
 # Initialize modules.
 source ${ZIM_HOME}/init.zsh
 
-alias glp='git log --pretty=format:"%C(yellow)%h%Creset - %C(green)%an%Creset, %ar : %s"'
+# Word characters: remove / . - so Ctrl+Backspace stops at path separators, dots, and hyphens
+WORDCHARS='*?_[]~=&;!#$%^(){}<>'
+
+# Aliases
 alias gs='git status'
+alias glp='git log --pretty=format:"%C(yellow)%h%Creset - %C(green)%an%Creset, %ar : %s"'
 alias bu='brew update && brew upgrade && brew upgrade --cask && brew cleanup'
+
+# Environment Variables
